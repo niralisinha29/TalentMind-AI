@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Hackathon Dataset
+data/
+*.jsonl
+*.zip
+__MACOSX/

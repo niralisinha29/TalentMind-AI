@@ -222,3 +222,6 @@ data/
 *.jsonl
 *.zip
 __MACOSX/
+
+# Chroma Vector Database
+vector_db/

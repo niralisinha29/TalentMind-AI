@@ -113,3 +113,4 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
 
         if count == 3:
             break
+

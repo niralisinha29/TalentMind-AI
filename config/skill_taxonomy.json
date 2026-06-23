@@ -1,0 +1,85 @@
+{
+  "GenAI": [
+    "LLMs",
+    "Fine-tuning LLMs",
+    "Prompt Engineering",
+    "LoRA",
+    "QLoRA",
+    "PEFT",
+    "NLP"
+  ],
+
+  "RAG": [
+    "RAG",
+    "Embeddings",
+    "Vector Search",
+    "FAISS",
+    "Pinecone",
+    "Qdrant",
+    "Weaviate",
+    "Milvus",
+    "pgvector",
+    "LlamaIndex",
+    "LangChain",
+    "Haystack",
+    "Information Retrieval",
+    "Semantic Search",
+    "BM25",
+    "OpenSearch",
+    "Elasticsearch"
+  ],
+
+  "MachineLearning": [
+    "Machine Learning",
+    "Deep Learning",
+    "TensorFlow",
+    "PyTorch",
+    "scikit-learn",
+    "Data Science",
+    "Statistical Modeling",
+    "Feature Engineering",
+    "Speech Recognition",
+    "Forecasting",
+    "Time Series",
+    "Recommendation Systems",
+    "Reinforcement Learning"
+  ],
+
+  "ComputerVision": [
+    "CNN",
+    "OpenCV",
+    "YOLO",
+    "Object Detection",
+    "Image Classification",
+    "GANs",
+    "Computer Vision",
+    "Diffusion Models"
+  ],
+
+  "MLOps": [
+    "MLOps",
+    "MLflow",
+    "Kubeflow",
+    "BentoML",
+    "Weights & Biases"
+  ],
+
+  "DataEngineering": [
+    "Python",
+    "SQL",
+    "Spark",
+    "Kafka",
+    "Airflow",
+    "Databricks",
+    "Apache Beam"
+  ],
+
+  "VectorDatabases": [
+    "Pinecone",
+    "Qdrant",
+    "Weaviate",
+    "Milvus",
+    "FAISS",
+    "pgvector"
+  ]
+}

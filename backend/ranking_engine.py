@@ -1,5 +1,6 @@
 import json
 
+
 from backend.jd_parser import parse_jd
 
 from backend.semantic_retriever import (
@@ -26,6 +27,8 @@ from backend.intelligence.hiring_readiness import (
 from backend.explanation_engine import (
     generate_explanation
 )
+
+
 
 
 def calculate_average_credibility(candidate):
@@ -58,7 +61,8 @@ def calculate_average_credibility(candidate):
 
 def calculate_final_score(
     candidate,
-    required_capabilities
+    required_capabilities,
+    job_description
 ):
 
     capability_match = (
@@ -85,6 +89,10 @@ def calculate_final_score(
             candidate
         )
     )
+
+    
+
+    profile = candidate.get("profile", {})
 
     # Base Score
     final_score = (
@@ -117,17 +125,27 @@ def calculate_final_score(
 
             "final_score":
                 round(final_score, 2)
+            
 
         }
 
     )
 
+    
     return {
 
-        "candidate":
-            candidate["profile"][
-                "anonymized_name"
-            ],
+        "candidate":profile["anonymized_name"],
+        "headline":profile.get("headline"),
+        "profile_summary": profile.get("summary"),
+        "current_company": profile.get("current_company"),
+        "current_title": profile.get("current_title"),
+        "experience": profile.get("years_of_experience"),
+        "location": profile.get("location"),
+        "country": profile.get("country"),
+        "industry": profile.get("current_industry"),
+
+        "skills": candidate.get("skills",[]),
+
 
         "capability_match":
             round(capability_match, 2),
@@ -148,7 +166,14 @@ def calculate_final_score(
             explanation["recommendation"],
 
         "strengths":
-            explanation["strengths"]
+            explanation["strengths"],
+        
+        "weaknesses":
+            explanation["weaknesses"],
+
+        "ai_summary":
+            explanation["summary"],
+        
 
     }
 
@@ -246,7 +271,8 @@ def rank_candidates_for_jd(job_description):
 
         result = calculate_final_score(
             candidate,
-            required_capabilities
+            required_capabilities,
+            job_description
         )
 
         result["semantic_similarity"] = (

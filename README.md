@@ -254,48 +254,52 @@ To run the project locally, provide a compatible JSONL candidate dataset inside 
 ![Home Page](docs/screenshots/01-home-page.png)
 
 
-### 2. Job Description Input
+### 2. AI Capabilities 
 
-![Job Description](docs/screenshots/02-job-description.png)
+![AI Capabilities](docs/screenshots/02-AI-capabilities.png)
 
+### 3. Job Description Input
 
-### 3. AI Hiring Report
-
-![AI Hiring Report](docs/screenshots/03-ai-hiring-report.png)
-
-
-### 4. Candidate Analysis Dashboard
-
-![Candidate Analysis](docs/screenshots/04-candidate-analysis.png)
+![Job Description](docs/screenshots/03-AI-capabilities.png)
 
 
-### 5. Top Recommended Candidates
+### 4. AI Hiring Report
 
-![Top Candidates](docs/screenshots/05-top-recommended-candidates.png)
-
-
-### 6. Candidate Intelligence Overview
-
-![Candidate Intelligence](docs/screenshots/06-candidate-intelligence-overview.png)
+![AI Hiring Report](docs/screenshots/04-ai-hiring-report.png)
 
 
-### 7. Candidate Intelligence Analysis
+### 5. Candidate Analysis Dashboard
 
-![Candidate Intelligence Analysis](docs/screenshots/07-candidate-intelligence-skills.png)
-
-
-### 8. Technical Skills Assessment
-
-![Technical Skills](docs/screenshots/08-candidate-technical-skills.png)
+![Candidate Analysis](docs/screenshots/05-candidate-analysis.png)
 
 
-### 9. AI Interview Kit
+### 6. Top Recommended Candidates
 
-![AI Interview Kit](docs/screenshots/09-ai-interview-kit.png)
+![Top Candidates](docs/screenshots/06-top-recommended-candidates.png)
 
-### 10. AI Interview Kit
 
-![AI Interview Kit](docs/screenshots/10-ai-interviewkit.png)
+### 7. Candidate Intelligence Overview
+
+![Candidate Intelligence](docs/screenshots/07-candidate-intelligence-overview.png)
+
+
+### 8. Candidate Intelligence Analysis
+
+![Candidate Intelligence Analysis](docs/screenshots/08-candidate-intelligence-skills.png)
+
+
+### 9. Technical Skills Assessment
+
+![Technical Skills](docs/screenshots/09-candidate-technical-skills.png)
+
+
+### 10. AI Interview Kit button 
+
+![AI Interview Kit](docs/screenshots/10-ai-interview-kitbutton.png)
+
+### 11. AI Interview Kit
+
+![AI Interview Kit](docs/screenshots/11-ai-interviewkit.png)
 
 
 # ⚙ Installation Guide

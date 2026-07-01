@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import Stats from "../components/Stats";
+import FeatureCards from "../components/FeatureCards";
+//import Workflow from "../components/Workflow";
 import JobForm from "../components/JobForm";
 
 function Home() {
@@ -13,7 +14,9 @@ function Home() {
 
             <Hero />
 
-            <Stats />
+            <FeatureCards />
+
+            {/* <Workflow /> */}
 
             <JobForm />
 

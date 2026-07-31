@@ -5,6 +5,9 @@ from fastapi import UploadFile, File
 import PyPDF2
 import io
 
+from backend.agents.chief_recruiter.agent import ChiefRecruiterAgent
+from backend.agents.chief_recruiter.schema import RecruiterRequest
+
 from backend.ranking_engine import (
     get_top_candidates,
     rank_candidates_for_jd,
@@ -244,3 +247,11 @@ def generate_interview_kit(request: InterviewRequest):
             interview_result["interview_questions"]
 
     }
+
+chief_recruiter = ChiefRecruiterAgent()
+
+
+@app.post("/agents/chief-recruiter/plan")
+def create_hiring_plan(request: RecruiterRequest):
+
+    return chief_recruiter.plan(request.goal)
